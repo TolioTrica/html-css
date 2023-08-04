@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html 5</title>
+    <style></style>
+</head>
+<body>
+    <h1>Imagem Dinânimica</h1>
+    <p>Tente abrir este site em varios dispositivos diferentes ou  simplesmente aumente e diminua o tamanho  do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/fotos-g.png" alt="imagem flexivel"> 
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio!</p>
+    <audio preload="metadata" controls>
+        <source src="midias/Libianca - People (Check On Me) [Official Music Video].mp3" type="audio/mpeg">
+        <source src="midias/Libianca - People (Check On Me) [Official Music Video].ogg" type="audio/ogg">
+        <source src="midias/Libianca - People (Check On Me) [Official Music Video].wav" type="audio/wav">
+        <p>Infelizmente o seu navegador nao consegue reproduzir o audio.<a href="midias/Libianca - People (Check On Me) [Official Music Video].mp3">Clique aqui pra baixar o arquivo mp3</a></p>
+        <!--MAneira ideal de adicionar os audios, nao usar o formato de audio wav pk é muito pesado, o ideal é o mp3 e ogg. é importante colocar os audios assim desta forma para que caso o navegador naon suporte um dado formato de audio possa abrir o outro, por isso temos ali a sequencia de audios e caso nenhum deles aceite temos o paragrafo com uma mensagem como ultima opcao a ser exibida-->
+    </audio>
+</body>
+</html> 

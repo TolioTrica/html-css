@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+</head>
+<style>
+    body {
+        color: black;
+    }
+
+    h1 {
+        font-family: consolas
+    }
+    div{
+        width: 300px;
+    }
+
+    div>ul {
+        display: none;
+        color: black;
+    }
+
+    div:hover>ul {
+        display: block;
+        background-color: black;
+        color: aliceblue;
+    }
+
+    div:hover {
+        color: rgb(43, 226, 89)
+    
+    }
+</style>
+
+<body>
+    <h1>Restaurante do Tólio Trica</h1>
+    <p>look at the menu bellow:</p>
+    <div>Menu
+        <ul>
+            <li>Frango</li>
+            <li>pao</li>
+            <li>batata</li>
+            <li>carne de porco</li>
+            <li>Guisado de vaca</li>
+        </ul>
+    </div>
+</body>
+
+</html>
